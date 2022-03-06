@@ -43,3 +43,12 @@ public int[] solution(int[] array, int[][] commands) {
 		return answer;
 	}
 ```
+
+## 학습할 풀이 2
+### 수도코드
+```
+string <- array
+sub_string <-string.subString(i, j)
+sub_string.sort()
+result.add(sub_string.get(j))
+```
