@@ -44,11 +44,44 @@ public int[] solution(int[] array, int[][] commands) {
 	}
 ```
 
-## 학습할 풀이 2
-### 수도코드
+### Arrays.sort(Object[])
+정의: 배열 원소 타입의 비교 기준에 따라, 해당 배열을 오름차순으로 정렬한다.
+#### Arrays.sort(String[]) 예시
+##### Code
+``` java
+String[] arr = {"Apple", "Kiwi", "Orange", "Banana", "Watermelon", "Cherry"};
+Arrays.sort(arr);
+System.out.println("Sorted arr[] : " + Arrays.toString(arr));
 ```
-string <- array
-sub_string <-string.subString(i, j)
-sub_string.sort()
-result.add(sub_string.get(j))
+
+#### Output
+```Sorted arr[] : [Apple, Banana, Cherry, Kiwi, Orange, Watermelon]```
+
+### Arrays.copyOfRange(object[], int from, int to)
+정의: Object[] 배열에서 from 부터 to 까지의 원소를 갖는 배열을 복사한다.
+참고). to 값이 object[]의 크기보다 크다면, default(int: 0) 값을 포함하여 복사한다.
+#### Code
+``` java
+public static void main(String[] args) {
+	int[] arr1 = { 1, 2, 3, 4, 5 };
+	System.out.print("arr1 >>");
+	for (int i = 0; i < arr1.length; i++)
+		System.out.print(" " + arr1[i]);
+	
+	int[] arr2 = Arrays.copyOfRange(arr1, 0, 3); 
+	System.out.print("\narr2 >>");
+	for (int i = 0; i < arr2.length; i++)
+		System.out.print(" " + arr2[i]);
+	
+	int[] arr3 = Arrays.copyOfRange(arr1, 0, 6);
+	System.out.print("\narr3 >>");
+	for (int i = 0; i < arr3.length; i++)
+		System.out.print(" " + arr3[i]);
+}
+```
+### Output
+```
+arr1 >> 1 2 3 4 5
+arr2 >> 3
+arr3 >> 1 2 3 4 5 0
 ```
