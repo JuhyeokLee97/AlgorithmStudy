@@ -58,7 +58,7 @@ System.out.println("Sorted arr[] : " + Arrays.toString(arr));
 ```Sorted arr[] : [Apple, Banana, Cherry, Kiwi, Orange, Watermelon]```
 
 ### Arrays.copyOfRange(object[], int from, int to)
-정의: Object[] 배열에서 from 부터 to 까지의 원소를 갖는 배열을 복사한다.
+정의: Object[] 배열에서 from 부터 to 까지의 원소를 갖는 배열을 복사한다.</br>
 참고). to 값이 object[]의 크기보다 크다면, default(int: 0) 값을 포함하여 복사한다.
 #### Code
 ``` java
