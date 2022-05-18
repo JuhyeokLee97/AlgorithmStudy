@@ -1,6 +1,11 @@
-#Stream.map()이란
+# Stream.map()이란
 
 ## 사용예시: Convert ArrayList To Array
+### 사용한 알고리즘 문제
+<p>
+	
+[Programmers/완전탐색/모의고사](https://github.com/JuhyeokLee97/AlgorithmStudy/blob/main/Programmers/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/%5B2%5D%20%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC.md)
+	</p>
 ### Code
 ``` java
 
